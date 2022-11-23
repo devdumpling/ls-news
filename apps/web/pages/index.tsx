@@ -1,10 +1,8 @@
-import { Button } from "ui";
-
-export default function Web() {
+export default function Home() {
   return (
     <div>
-      <h1>Web</h1>
-      <Button />
+      <h1>lsn</h1>
+      <p>list just the fucking news</p>
     </div>
   );
 }
