@@ -1,3 +1,4 @@
+import * as React from "react";
 import { container } from "./Container.style";
 
 interface ContainerProps {

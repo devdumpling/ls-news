@@ -1,5 +1,6 @@
-import { style } from "@vanilla-extract/css";
+import * as React from "react";
 import { globalStyle } from "@vanilla-extract/css";
+import { Container } from "../components";
 
 globalStyle("html, body", {
   margin: 0,
@@ -13,7 +14,9 @@ globalStyle("html, body", {
 export const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Container theme="light">{children}</Container>
+      </body>
     </html>
   );
 };
