@@ -1,5 +1,5 @@
 import * as React from "react";
-import { container } from "./Container.style";
+import { container } from "./Container.css";
 
 interface ContainerProps {
   theme: "light" | "dark";
@@ -7,5 +7,5 @@ interface ContainerProps {
 }
 
 export const Container = ({ theme, children }: ContainerProps) => {
-  return <section className={container(theme)}>{children}</section>;
+  return <section className={container}>{children}</section>;
 };
