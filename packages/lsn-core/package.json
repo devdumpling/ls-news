@@ -1,0 +1,22 @@
+{
+  "name": "lsn-core",
+  "version": "0.0.1",
+  "description": "Core API for getting news without the bullshit.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "Devon Wells",
+  "license": "MIT",
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "workspace:*",
+    "react": "18.2",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.5.2"
+  }
+}
