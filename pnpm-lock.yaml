@@ -22,6 +22,8 @@ importers:
       '@types/node': ^17.0.12
       '@types/react': ^18.0.22
       '@types/react-dom': ^18.0.7
+      '@vanilla-extract/css': ^1.9.2
+      '@vanilla-extract/dynamic': ^2.0.3
       '@vanilla-extract/next-plugin': ^2.1.1
       eslint-config-custom: workspace:*
       lsn-core: workspace:*
@@ -32,6 +34,8 @@ importers:
       typescript: ^4.5.3
       ui: workspace:*
     dependencies:
+      '@vanilla-extract/css': 1.9.2
+      '@vanilla-extract/dynamic': 2.0.3
       lsn-core: link:../../packages/lsn-core
       next: 13.0.5_biqbaboplfbrettd7655fr4n2y
       react: 18.2.0

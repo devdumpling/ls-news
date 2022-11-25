@@ -34,6 +34,6 @@ export default defineConfig({
     }),
     ,
     dts(),
-    vanillaExtractPlugin(),
+    vanillaExtractPlugin({ identifiers: "debug" }),
   ],
 });
