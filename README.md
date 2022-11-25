@@ -2,6 +2,9 @@
 
 List the news with none of the bullshit. 
 
+
+## Goals 
+
 - event driven
 - no ads, no users, no registration, just top stories
 - fully open 
