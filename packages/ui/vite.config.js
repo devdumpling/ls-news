@@ -4,20 +4,22 @@ import { vanillaExtractPlugin } from "@vanilla-extract/vite-plugin";
 import react from "@vitejs/plugin-react";
 import dts from "vite-plugin-dts";
 
+import pkg from "./package.json";
+
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
     lib: {
       // Could also be a dictionary or array of multiple entry points
       entry: resolve(__dirname, "lib/index.tsx"),
-      name: "UILib",
+      name: "UI",
+      formats: ["cjs", "es"],
       // the proper extensions will be added
-      fileName: "ui",
+      fileName: "index",
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
-      // into your library
-      external: ["react", "react-dom"],
+      external: Object.keys(pkg.peerDependencies),
       output: {
         // Provide global variables to use in the UMD build
         // for externalized deps
