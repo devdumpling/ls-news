@@ -1,17 +1,22 @@
 {
   "private": true,
   "scripts": {
+    "build": "turbo run build",
+    "build:packages": "turbo run build --filter=./packages/**/*",
     "changeset": "changeset",
     "changeset:version": "changeset version",
-    "build": "turbo run build",
+    "clean": "turbo run clean && pnpm clean:modules",
+    "clean:modules": "rimraf **/**/node_modules **/**/**/node_modules && rm -rf node_modules",
     "dev": "turbo run dev --parallel",
+    "dev:web": "turbo run dev --filter=web",
     "lint": "turbo run lint"
   },
   "devDependencies": {
     "eslint": "7.32.0",
     "eslint-config-custom": "workspace:*",
     "prettier": "^2.5.1",
-    "turbo": "latest"
+    "turbo": "latest",
+    "rimraf": "^3.0.2"
   },
   "packageManager": "pnpm@7.15.0",
   "dependencies": {
