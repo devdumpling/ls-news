@@ -1,4 +1,4 @@
-import "ui/styles";
+import "ui/styles.css";
 import type { AppProps } from "next/app";
 import { Container } from "ui";
 
