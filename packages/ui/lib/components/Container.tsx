@@ -1,11 +1,14 @@
 import * as React from "react";
 import { container } from "./Container.css";
+// import { lightThemeClass, darkThemeClass } from "../theme";
 
 interface ContainerProps {
-  theme: "light" | "dark";
+  theme?: "light" | "dark";
   children: React.ReactNode;
 }
 
+// todo figure out theming
+
 export const Container = ({ theme, children }: ContainerProps) => {
-  return <section className={container}>{children}</section>;
+  return <div className={container}>{children}</div>;
 };
