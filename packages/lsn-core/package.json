@@ -1,6 +1,6 @@
 {
   "name": "lsn-core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Core API for getting news without the bullshit.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

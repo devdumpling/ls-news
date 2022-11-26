@@ -1,6 +1,6 @@
-# web
+# test-ui
 
-## 1.0.2
+## 0.1.1
 
 ### Patch Changes
 
@@ -9,12 +9,5 @@
 - Updated dependencies [5de7faf]
 - Updated dependencies
   - ui@0.0.2
-  - lsn-core@0.0.2
-
-## 1.0.1
-
-### Patch Changes
-
-- init changesets bump
-- Updated dependencies
-  - ui@0.0.1
+  - eslint-config-custom@0.0.2
+  - tsconfig@0.0.2
