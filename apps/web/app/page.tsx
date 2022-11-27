@@ -1,8 +1,10 @@
-import { ArticlesResponse, GNEWS_URLS } from "lsn-core";
+import { fetchArticles } from "lsn-core";
 import Link from "next/link";
 
 export default async function Home() {
-  const { articles } = await getArticles();
+  const { articles } = await fetchArticles({
+    init: { next: { revalidate: 21600 } },
+  });
 
   return (
     <main>
@@ -14,9 +16,7 @@ export default async function Home() {
           {articles.map((article) => (
             <li key={article.title}>
               <details>
-                <summary>
-                  {article.title}
-                </summary>
+                <summary>{article.title}</summary>
                 <p>{article.description}</p>
                 <Link href={article.url}>{article.source.name}</Link>
               </details>
@@ -26,11 +26,4 @@ export default async function Home() {
       </div>
     </main>
   );
-}
-
-async function getArticles() {
-  const res = await fetch(GNEWS_URLS.breaking, { next: { revalidate: 21600 } });
-  const data: ArticlesResponse = await res.json();
-
-  return data;
 }
