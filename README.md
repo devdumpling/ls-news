@@ -2,12 +2,12 @@
 
 List the news with none of the bullshit. 
 
-
 ## Goals 
 
 - event driven
 - no ads, no users, no registration, just top stories
 - fully open 
+- parse headlines and remove filler words, hyperbole, and other bullshit
 - AI summaries
 - fully customizable
 
