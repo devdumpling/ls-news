@@ -15,7 +15,7 @@ export default async function Home() {
             <li key={article.title}>
               <details>
                 <summary>
-                  <h3>{article.title}</h3>
+                  {article.title}
                 </summary>
                 <p>{article.description}</p>
                 <Link href={article.url}>{article.source.name}</Link>
