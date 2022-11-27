@@ -3,6 +3,8 @@
   "scripts": {
     "build": "turbo run build",
     "build:packages": "turbo run build --filter=./packages/**/*",
+    "build:web": "turbo run build --filter=./apps/web",
+    "start:web": "turbo run start --filter=./apps/web",
     "changeset": "changeset",
     "changeset:version": "changeset version",
     "clean": "turbo run clean && pnpm clean:modules",

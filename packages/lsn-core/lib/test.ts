@@ -1,8 +1,8 @@
-import { fetcher } from "./fetcher";
+import { fetchArticles } from "./fetchers";
 
 // Quick test function to make sure the fetcher works
 export const test = async () => {
-  const data = await fetcher();
+  const data = await fetchArticles();
 
   const { articles } = data;
 
