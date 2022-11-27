@@ -1,5 +1,13 @@
 # test-ui
 
+## 0.1.2
+
+### Patch Changes
+
+- 6402e94: Clean up some styles
+- Updated dependencies [6402e94]
+  - ui@0.0.3
+
 ## 0.1.1
 
 ### Patch Changes
