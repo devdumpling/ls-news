@@ -1,5 +1,11 @@
 # web
 
+## 1.0.4
+
+### Patch Changes
+
+- 8c056d7: links use source name instead of full url for copy
+
 ## 1.0.3
 
 ### Patch Changes
