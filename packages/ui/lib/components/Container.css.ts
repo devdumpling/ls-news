@@ -1,11 +1,13 @@
 import { style } from "@vanilla-extract/css";
 
-export const container = style([  
+export const container = style([
   {
     display: "flex",
     flexDirection: "column",
-    alignItems: "center",
-    padding: "1rem",
+    padding: "2rem",
     minHeight: "100vh",
+    width: "100%",
+    maxWidth: "1024px",
+    margin: "0 auto",
   },
 ]);

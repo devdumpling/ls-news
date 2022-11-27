@@ -1,4 +1,5 @@
 import { ArticlesResponse, GNEWS_URLS } from "lsn-core";
+import Link from "next/link";
 
 export default async function Home() {
   const { articles } = await getArticles();
@@ -8,10 +9,18 @@ export default async function Home() {
       <h1>lsn</h1>
       <p>list just the fucking news</p>
       <div>
-        <h2>Breaking US Stories</h2>
+        <h2>Breaking Stories (US)</h2>
         <ul>
           {articles.map((article) => (
-            <li key={article.title}>{article.title}</li>
+            <li key={article.title}>
+              <details>
+                <summary>
+                  <h3>{article.title}</h3>
+                </summary>
+                <p>{article.description}</p>
+                <Link href={article.url}>{article.url}</Link>
+              </details>
+            </li>
           ))}
         </ul>
       </div>
