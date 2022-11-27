@@ -1,5 +1,13 @@
 # web
 
+## 1.0.3
+
+### Patch Changes
+
+- 6402e94: Clean up some styles
+- Updated dependencies [6402e94]
+  - ui@0.0.3
+
 ## 1.0.2
 
 ### Patch Changes
