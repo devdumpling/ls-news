@@ -18,7 +18,7 @@ export default async function Home() {
                   <h3>{article.title}</h3>
                 </summary>
                 <p>{article.description}</p>
-                <Link href={article.url}>{article.url}</Link>
+                <Link href={article.url}>{article.source.name}</Link>
               </details>
             </li>
           ))}
